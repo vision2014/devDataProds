@@ -1,0 +1,24 @@
+Application: What species is this iris flower?
+
+Introduction
+This application uses the Edgar Anderson's Iris dataset to predict an iris flower species. Furthermore, the application allows the use to choose the data partitioning proportions and see how that affects the predicition. Documentation for the data can be found here
+https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html .
+The Iris dataset has 150 observations and 5 variables.
+
+What does the application do?
+The application uses user inputed sepal and petal lengths and sepal and petal widths to predict the species of the iris flower. There are 3 species, setosa, versicolor and virginica. The application allows the user to choose the data partitioning proportion in buiding the model.
+
+How do I run the application?
+1. use the sliders to select your sepal length, petal length,sepal width and petal width
+2. Select what percent of the data you want to use to train the model
+3. Press the "Predict" button to run the model. The predict button has to be clicked every time new measurements have been selected
+
+What happens with the user input?
+The selected sepal and petal measures are compiled into a 1 by 4 dataframe. Then the dataframe is fed into the prediction model to predict the species. The percent of training data selected is use to partition the data into the training and testing dataset. The testing data is then fed into the confusionmatrix calculation. 
+
+What do I get as an outcome(s)?
+First, you will see your predicted species.
+Second, you will see the chart. This will always be the same since it is a static plot.
+Thirdly, you will see the confusion matrix. This is influenced by the percent of data you allocate into the training model.
+The confusion matrix shows how well the model performs.= in prediciting the species.
+
